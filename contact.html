@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            color: azure;
+            background: url(images/contact.png);
+
+            background-size: cover;
+
+        }
+       
+
+
+        .left {
+            color: whitesmoke;
+            display: inline-block;
+            /* border: 2px solid whitesmoke; */
+            position: absolute;
+            top: 10vh;
+            left: 8vb;
+            font-family: "Audiowide", sans-serif;
+            position: sticky;
+
+        }
+
+        .left img {
+            width: 15vh;
+            height: 15vb;
+            margin: -4vh 6vb;
+            margin-left: -4vb;
+            margin-top: -9vh;
+
+        }
+
+        .bar {
+            color: #370505;
+            padding: -1vh 2vh 2vw;
+            margin: -1vh 38vw;
+            font-size: 9vh;
+            font-family: "Trirong", serif;
+        }
+
+        .text {
+            color: #370505;
+            padding: 6vw 2vh 2vh 2vw;
+            margin: -10vh 0vw 4vh 45vw;
+            font-size: 4vh;
+            font-family: "Trirong", serif;
+        }
+
+        .text1 {
+            color: #370505;
+            padding: 6vw 2vh 2vh 2vw;
+            margin: -12vh 2vw 0vh 62vw;
+            font-size: 5vh;
+            font-family: "Trirong", serif;
+
+        }
+
+        .text2 {
+            color: #370505;
+            padding: 6vw 1vh 1vh 21vw;
+            margin: -10vh 46vw;
+            font-size: 4vh;
+            font-family: "Trirong", serif;
+        }
+
+        .text3 {
+            color: #370505;
+            padding: 6vw 2vh 2vh 2vw;
+            margin: -10vh 11vw 20vh 65vw;
+            font-size: 5vh;
+            font-family: "Trirong", serif;
+
+        }
+
+        .text4 {
+            color: #370505;
+            padding: 3vw 0vh 1vh 16vw;
+            margin: -24vh 45vw;
+            font-size: 4vh;
+            font-family: "Trirong", serif;
+        }
+
+        .container {
+            font-family: "Trirong", serif;
+            color: #370505;
+            text-align: center;
+            margin: -59vh 10vw;
+            padding: 10vh 11vw;
+            /* border: 3px solid white; */
+            width: 33%;
+
+        }
+
+        .form input {
+            font-family: "Trirong", serif;
+            margin: 2vh 1vw 1vh 1vw;
+            padding: 2vh 6vw 2vh 5vw;
+            border: 0.3vh solid #370505;
+            border-radius: 1.5rem;
+            text-align: center;
+            font-size: 2vh;
+        }
+
+        .bttn {
+            font-family: "Trirong", serif;
+            padding: 1vh 1vw;
+            margin: 0vh 4vw;
+            margin-top: 5vh;
+            border: 0.3vh solid #370505;
+            border-radius: 1.5rem;
+            background-color: rgb(255, 255, 255);
+            font-size: 5vh;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            text-decoration: underline;
+            background-color: rgb(228, 159, 56);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        <img src="images/logo.png" alt="">
+
+    </div>
+    <div class="bar">
+        Contact Us
+    </div>
+    <div class="text">
+        Please feel free to contact us & we would be happy to assist you !
+    </div>
+    <div class="text1">
+        Phone Numbers
+    </div>
+    <div class="text2">
+        9199627917 <br> 9798805017
+    </div>
+    <div class="text3">
+        Email Id's
+    </div>
+    <div class="text4">
+        deendyalkumar733@gmail.com <br> rhn7789@gmail.com
+    </div>
+    <div class="container">
+        <h1>
+            Fill Up Your Details
+        </h1>
+        <form action="backend.php">
+            <div class="form">
+                <input type="text" name="" placeholder="NAME">
+            </div>
+            <div class="form">
+                <input type="text" name="" placeholder="MOBILE NO.">
+            </div>
+            <div class="form">
+                <input type="text" name="" placeholder="EMAIL ID">
+            </div>
+            <div class="form">
+                <input type="text" name="" placeholder="ADDRESS">
+            </div>
+            <div class="form">
+                <input type="text" name="" placeholder="FURNITURE">
+            </div>
+            <button class="bttn">SUBMIT</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS FURNITURE's</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <style>
+        body {
+            color: azure;
+            background: url(images/bg2.png);
+
+            background-size: cover;
+
+
+
+
+        }
+
+        @media (max-width: 800px) {
+            .nav-list {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                /* Adjust based on navbar height */
+                left: 0;
+                background-color: #370505;
+                z-index: 1;
+            }
+
+            .nav-list.active {
+                display: flex;
+            }
+
+            .toggle {
+                display: block;
+            }
+
+            .nav-list li {
+                margin: 10px 0;
+                text-align: center;
+                /* Center the links */
+            }
+        }
+
+
+
+        .head-wrap {
+            border: 0vh solid #370505;
+            margin: -2vh -1vb;
+            padding: 9vh 0vb;
+            background-color: #370505;
+        }
+
+        .left {
+            color: whitesmoke;
+            display: inline-block;
+            /* border: 2px solid whitesmoke; */
+            position: absolute;
+            top: 10vh;
+            left: 8vb;
+            font-family: "Audiowide", sans-serif
+        }
+
+        .left img {
+            width: 15vh;
+            height: 15vb;
+            margin: -4vh 6vb;
+            margin-left: -4vb;
+            margin-top: -9vh;
+        }
+
+        .right {
+            /* border: 2px solid whitesmoke; */
+            display: block;
+            position: absolute;
+            top: 6vh;
+            right: 1vw;
+
+        }
+        .nav-list{
+            list-style-type: none ;
+            display: flex;
+        }
+
+        .nav-list li {
+            list-style: none;
+            display: inline-block;
+            margin: -3vh 1vw;
+            font-size: 4vh;
+            text-align: center;
+
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            padding: 0vh 1vw;
+            color: aliceblue;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .nav-list li a:hover {
+            text-decoration: underline;
+            color: rgb(228, 159, 56);
+        }
+
+        .text {
+            color: #370505;
+
+            margin: 5vh 11vw -21vh 25vh;
+            padding: 17vh 0vw;
+            font-size: 7vh;
+            font-family: "Trirong", serif;
+        }
+
+        .tsec {
+            color: #370505;
+            margin: 9vh 10vw;
+            padding: 0vh 10vw;
+            font-size: 5vh;
+            font-family: "Trirong", serif;
+        }
+
+        .tthir {
+            color: #370505;
+            margin: -11vh 39vw;
+            padding: -1vh 11vw;
+            font-size: 5vh;
+            font-family: "Trirong", serif;
+
+        }
+
+        .checkbtn {
+            font-size: 3vh;
+            float: right;
+            line-height: 4vh;
+            display: none;
+            margin: 0.5vh 0.5vw 0.5vh 0.5vw;
+            color: rgb(206, 236, 72);
+        }
+
+        #check {
+            display: none;
+        }
+
+        .toggle {
+            display: none;
+            font-size: 2em;
+            color: white;
+            cursor: pointer;
+            display: block;
+            /* float: right; */
+        }
+        .nav-list.active {
+        display: flex;
+    }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="head-wrap">
+
+
+            <div class="left">
+                <img src="images/logo.png" alt="">
+
+            </div>
+            <div class="right">
+                <nav class="navbar">
+
+                    <!-- <div class="toggle" id="toggle-btn">&#9776;</div> -->
+                    <ul class="nav-list" id="nav-list">
+                        <li><a href="commercial.html">Commercial</a></li>
+                        <li><a href="residential.html">Residential</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+            </div>
+
+    </header>
+    </div>
+    <div class="text">
+
+        We Build Furniture that Brings People Together !
+
+    </div>
+    <div class="tsec">Hand-Crafted Custom Pieces of Furniture For Your</div>
+    <div class="tthir">
+        Home or Business
+    </div>
+    <script src="script.js">
+        document.getElementById('toggle-btn').addEventListener('click', function () {
+            const navList = document.getElementById('nav-list');
+            navList.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

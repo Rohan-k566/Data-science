@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About Us - Furniture Store</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: url(images/bg2.png);
+    
+            background-size: cover;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .left {
+            color: whitesmoke;
+            display: inline-block;
+            /* border: 2px solid whitesmoke; */
+            position: absolute;
+            top: 10vh;
+            left: 8vb;
+            font-family: "Audiowide", sans-serif
+        }
+
+        .left img {
+            width: 15vh;
+            height: 15vb;
+            margin: 7vh 6vb;
+            margin-left: -4vb;
+            margin-top: -18vh;
+        }
+
+        .head-wrap {
+            border: 0vh solid #370505;
+            margin: -3vh 0vb;
+            padding: 4vh 0vb;
+            background-color: #370505;
+            position: sticky;
+        }
+
+
+        .logo {
+            color: whitesmoke;
+            display: inline-block;
+            /* border: 2px solid whitesmoke; */
+            position: absolute;
+            top: 10vh;
+            left: 8vb;
+            font-family: "Audiowide", sans-serif
+        }
+
+        .logo img {
+            width: 15vh;
+            height: 15vb;
+            margin: -4vh 6vb;
+            margin-left: -4vb;
+            margin-top: -9vh;
+        }
+
+        header {
+            background-color: #370505;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+        }
+
+        .nav-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .nav-list li {
+            margin: 0 15px;
+        }
+
+        .nav-list a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .about-section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .about-section h1 {
+            text-align: center;
+            color: #370505;
+        }
+
+        .about-section h2 {
+            color: #370505;
+            /* Highlight color */
+        }
+
+        .about-section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #370505;
+            color: white;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .nav-list {
+                flex-direction: column;
+                display: none;
+                /* Hide on small screens */
+            }
+
+            .nav-list.active {
+                display: flex;
+                /* Show when active */
+            }
+
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        .heading {
+            font-size: 7vh;
+            color: aliceblue;
+            font-family: "Trirong", serif;
+            padding: 0vh 3vw -2vh 2vw;
+            margin: 0vh 8vw 1vh 40vw;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            DS Furniture
+        </div>
+        <div class="head-wrap">
+
+
+            <div class="left">
+                <img src="images/logo.png" alt="">
+            </div>
+        </div>
+    </header>
+    <!-- <header>
+        <nav class="navbar">
+            <div class="logo"><img src="images/logo.png" alt=""></div>
+            <ul class="nav-list">
+                <li><a href="commercial.html">Commercial</a></li>
+                <li><a href="residential.html">Residential</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header> -->
+
+    <main>
+        <section class="about-section">
+            <h1>About Us</h1>
+            <p>Welcome to Furniture Store, your one-stop shop for high-quality furniture. We are passionate about
+                providing our customers with unique and stylish pieces that enhance their living spaces.</p>
+            <p>Established in 1998, we have been dedicated to crafting furniture that combines both functionality and
+                aesthetics. Our team of designers and artisans work tirelessly to create pieces that you will love for
+                years to come.</p>
+            <h2>Our Mission</h2>
+            <p>Our mission is to offer exceptional quality furniture that brings comfort and beauty to your home. We
+                believe that great design should be accessible to everyone.</p>
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>Wide range of styles and designs</li>
+                <li>Quality craftsmanship and materials</li>
+                <li>Excellent customer service</li>
+                <li>Eco-friendly practices</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; DS Furniture . All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
