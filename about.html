@@ -10,10 +10,22 @@
         * {
             box-sizing: border-box;
         }
-        
+
+        .nav-toggle {
+            display: block;
+            float: right;
+            margin-right: 50px;
+            padding-top: -10px;
+            /* padding-bottom: 20px; */
+            margin-top: -71px;
+            color: azure;
+            font-size: 2.5em;
+            text-decoration: none;
+        }
+
         body {
             background: url(images/bg2.png);
-    
+
             background-size: cover;
             margin: 0;
             font-family: Arial, sans-serif;
@@ -77,21 +89,7 @@
             padding: 1em;
         }
 
-        .nav-list {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-        }
 
-        .nav-list li {
-            margin: 0 15px;
-        }
-
-        .nav-list a {
-            color: white;
-            text-decoration: none;
-        }
 
         .about-section {
             padding: 20px;
@@ -121,23 +119,47 @@
             color: white;
         }
 
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .nav-list {
-                flex-direction: column;
-                display: none;
-                /* Hide on small screens */
+        @media screen and (max-width:767px) {
+            .heading {
+                margin: 0vh 8vw 1vh 36vw;
             }
 
-            .nav-list.active {
-                display: flex;
-                /* Show when active */
+
+        }
+
+        @media screen and (max-width:479px) {
+            .nav-toggle {
+                display: block;
+                float: right;
+                margin-right: 20px;
+                padding-top: -10px;
+                /* padding-bottom: 20px; */
+                margin-top: -66px;
+                color: azure;
+                font-size: 2.5em;
+                text-decoration: none;
             }
 
-            .navbar {
-                flex-direction: column;
-                align-items: flex-start;
+            .heading {
+                font-size: 6.5vh;
+                color: aliceblue;
+                font-family: "Trirong", serif;
+                padding: 0vh 3vw -2vh 2vw;
+                margin: 0vh 8vw 1vh 34vw;
+                /* margin-top: 0.5vh; */
             }
+        }
+
+        @media screen and (max-width:365px) {
+            .heading {
+                font-size: 5vh;
+                color: aliceblue;
+                font-family: "Trirong", serif;
+                padding: 0vh 3vw -2vh 2vw;
+                margin: 0vh 8vw 1vh 35vw;
+                /* margin-top: 0.5vh; */
+            }
+
         }
 
         .heading {
@@ -146,6 +168,7 @@
             font-family: "Trirong", serif;
             padding: 0vh 3vw -2vh 2vw;
             margin: 0vh 8vw 1vh 40vw;
+            /* margin-top: 0.5vh; */
         }
     </style>
 </head>
@@ -157,23 +180,17 @@
         </div>
         <div class="head-wrap">
 
+            <a href="#" class="nav-toggle">
+                &#9776;</i>
+            </a>
+
 
             <div class="left">
                 <img src="images/logo.png" alt="">
             </div>
         </div>
     </header>
-    <!-- <header>
-        <nav class="navbar">
-            <div class="logo"><img src="images/logo.png" alt=""></div>
-            <ul class="nav-list">
-                <li><a href="commercial.html">Commercial</a></li>
-                <li><a href="residential.html">Residential</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header> -->
+
 
     <main>
         <section class="about-section">

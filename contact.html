@@ -8,12 +8,46 @@
     <style>
         body {
             color: azure;
-            background: url(images/contact.png);
+            background: url(images/Contact.jpg);
 
             background-size: cover;
 
         }
-       
+
+        @media screen and (max-width: 991px) {
+            .bar {
+                color: #ffffff;
+                padding-top: 2vh;
+                margin: -2vh 36vw;
+                /* margin-top: 1vh; */
+                font-size: 9vh;
+                font-family: "Trirong", serif;
+            }
+
+        }
+
+
+        .nav-toggle {
+            display: block;
+            float: right;
+            margin-right: 50px;
+            padding-top: -10px;
+            /* padding-bottom: 20px; */
+            margin-top: 54px;
+            color: azure;
+            font-size: 2.5em;
+            text-decoration: none;
+        }
+
+
+        .head-wrap {
+            border: 0vh solid #370505;
+            margin: -12vh -1vb;
+            padding: 9vh 0vb;
+            background-color: #370505;
+            /* display: flex; */
+        }
+
 
 
         .left {
@@ -31,32 +65,34 @@
         .left img {
             width: 15vh;
             height: 15vb;
-            margin: -4vh 6vb;
+            margin: -8vh 6vb;
             margin-left: -4vb;
             margin-top: -9vh;
 
         }
 
         .bar {
-            color: #370505;
-            padding: -1vh 2vh 2vw;
-            margin: -1vh 38vw;
+            color: #ffffff;
+            /* padding: -1vh 2vh 2vw 2vh; */
+            padding-top: 2vh;
+            margin: -1vh 39vw;
+            /* margin-top: 1vh; */
             font-size: 9vh;
             font-family: "Trirong", serif;
         }
 
         .text {
             color: #370505;
-            padding: 6vw 2vh 2vh 2vw;
-            margin: -10vh 0vw 4vh 45vw;
+            padding: 9vw 2vh 0vh 3vw;
+            margin: -10vh 0vw 4vh 41vw;
             font-size: 4vh;
             font-family: "Trirong", serif;
         }
 
         .text1 {
             color: #370505;
-            padding: 6vw 2vh 2vh 2vw;
-            margin: -12vh 2vw 0vh 62vw;
+            padding: 10vw 2vh 2vh 0vw;
+            margin: -12vh 7vw -2vh 61vw;
             font-size: 5vh;
             font-family: "Trirong", serif;
 
@@ -64,7 +100,7 @@
 
         .text2 {
             color: #370505;
-            padding: 6vw 1vh 1vh 21vw;
+            padding: 6vw 0vh 1vh 18vw;
             margin: -10vh 46vw;
             font-size: 4vh;
             font-family: "Trirong", serif;
@@ -72,8 +108,8 @@
 
         .text3 {
             color: #370505;
-            padding: 6vw 2vh 2vh 2vw;
-            margin: -10vh 11vw 20vh 65vw;
+            padding: 6vw 3vh 2vh 0vw;
+            margin: -10vh 13vw 20vh 64vw;
             font-size: 5vh;
             font-family: "Trirong", serif;
 
@@ -82,7 +118,7 @@
         .text4 {
             color: #370505;
             padding: 3vw 0vh 1vh 16vw;
-            margin: -24vh 45vw;
+            margin: -24vh 42vw;
             font-size: 4vh;
             font-family: "Trirong", serif;
         }
@@ -91,7 +127,7 @@
             font-family: "Trirong", serif;
             color: #370505;
             text-align: center;
-            margin: -59vh 10vw;
+            margin: -75vh -8vw;
             padding: 10vh 11vw;
             /* border: 3px solid white; */
             width: 33%;
@@ -128,13 +164,24 @@
 </head>
 
 <body>
-    <div class="left">
-        <img src="images/logo.png" alt="">
+    <header>
 
-    </div>
-    <div class="bar">
-        Contact Us
-    </div>
+        <div class="head-wrap">
+
+            <a href="#" class="nav-toggle">
+                &#9776;</i>
+            </a>
+
+
+            <div class="left">
+                <img src="images/logo.png" alt="">
+
+            </div>
+            <div class="bar">
+                Contact Us
+            </div>
+        </div>
+    </header>
     <div class="text">
         Please feel free to contact us & we would be happy to assist you !
     </div>

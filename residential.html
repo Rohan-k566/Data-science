@@ -5,169 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Residential</title>
-    <style>
-        .left {
-            color: whitesmoke;
-            display: inline-block;
-            /* border: 2px solid whitesmoke; */
-            position: absolute;
-            top: 6vh;
-            left: 8vb;
-            font-family: "Audiowide", sans-serif;
-            position: sticky;
-        }
-
-
-        .left img {
-            width: 15vh;
-            height: 15vb;
-            margin: 0vh 1vb;
-            margin-left: -6vb;
-            margin-top: -16vh;
-        }
-
-        .head-wrap {
-            border: 0vh solid #370505;
-            margin: -2vh -1vb;
-            padding: 9vh 0vb;
-            background-color: #370505;
-            position:sticky;
-        }
-        
-
-
-
-        :root {
-            --background-dark: #2d3548;
-            --text-light: rgba(255, 255, 255, 0.6);
-            --text-lighter: rgba(255, 255, 255, 0.9);
-            --spacing-s: 1vh;
-            --spacing-m: 7vh;
-            --spacing-l: 12vh;
-            --spacing-xl: 16vh;
-            --spacing-xxl: 9vh;
-            --width-container: 600vh;
-        }
-
-        * {
-            border: 0;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            height: 100%;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2vh;
-        }
-
-        body {
-            height: 100%;
-        }
-
-        .hero-section {
-            align-items: flex-start;
-            background-image: linear-gradient(15deg, #13293D 0%, #7899D4 150%);
-            display: flex;
-            min-height: 100%;
-            justify-content: center;
-            padding: var(--spacing-xxl) var(--spacing-l);
-        }
-
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-column-gap: var(--spacing-l);
-            grid-row-gap: var(--spacing-l);
-            max-width: var(--width-container);
-            width: 100%;
-        }
-
-        @media(min-width: 150vh) {
-            .card-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media(min-width: 200vh) {
-            .card-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-
-
-        .card {
-            list-style: none;
-            position: relative;
-        }
-
-        .card:before {
-            content: '';
-            display: block;
-            padding-bottom: 150%;
-            width: 100%;
-        }
-
-        .card__background {
-            background-size: cover;
-            background-position: center;
-            border-radius: var(--spacing-l);
-            bottom: 0;
-            filter: brightness(0.75) saturate(1.2) contrast(0.85);
-            left: 0;
-            position: absolute;
-            right: 0;
-            top: 0;
-            transform-origin: center;
-            transform: scale(1) translateZ(0);
-            transition:
-                filter 200ms linear,
-                transform 200ms linear;
-        }
-
-        .card:hover .card__background {
-            transform: scale(1.05) translateZ(0);
-        }
-
-        .card-grid:hover>.card:not(:hover) .card__background {
-            filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
-        }
-
-        .card__content {
-            left: 0;
-            padding: var(--spacing-l);
-            position: absolute;
-            top: 0;
-        }
-
-        .card__category {
-            color: var(--text-light);
-            font-size: 0.9rem;
-            margin-bottom: var(--spacing-s);
-            text-transform: uppercase;
-        }
-
-        .card__heading {
-            color: var(--text-lighter);
-            font-size: 1.9rem;
-            text-shadow: 1vh 1vw 7vh rgba(0, 0, 0, 0.2);
-            line-height: 1.4;
-            word-spacing: 100vw;
-        }
-    </style>
+    <link rel="stylesheet" href="residential.css">
+   
 </head>
 
 <body>
-    <header> 
+    <header>
+        <div class="head-wrap">
 
-        <div class="head-wrap"></div>
-    </header>
-    
-    <div class="left">
-        <img src="images/logo.png" alt="">
-
-    </div>
+            
+            <a href="#" class="nav-toggle">
+                &#9776;</i>
+            </a>
+            
+            <div class="left">
+                <img src="images/logo.png" alt="">
+                
+            </div>
+            
+            <div class="right">
+                <nav class="navbar">
+                    
+                    <!-- <div class="toggle" id="toggle-btn">&#9776;</div> -->
+                    <ul class="nav-list" id="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="commercial.html">Commercial</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        
+        </header>
     <!-- <div class="first">
         <img src="images/Sofa.png" alt="">
     </div> -->
@@ -226,9 +96,9 @@
                         <p class="card__category">Furniture</p>
                         <h3 class="card__heading">WARDROBE's</h3>
                     </div>
-                </a> 
-                <!-- <div> --> 
-    </section> 
-</body> 
- 
-</html> 
+                </a>
+                <!-- <div> -->
+    </section>
+</body>
+
+</html>

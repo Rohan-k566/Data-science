@@ -17,14 +17,61 @@
             position: sticky;
         }
 
+        .nav-toggle {
+            display: none;
+        }
+
+        .head-wrap {
+            border: 0vh solid #370505;
+            margin: -2vh -1vb;
+            padding: 9vh 0vb;
+            background-color: #370505;
+        }
+
 
         .left img {
             width: 15vh;
             height: 15vb;
-            margin: 0vh 1vb;
-            margin-left: -6vb;
+            margin: -8vh 1vb;
+            margin-left: -4vb;
             margin-top: -16vh;
         }
+
+        .right {
+            /* border: 2px solid whitesmoke; */
+            display: block;
+            position: absolute;
+            top: 6vh;
+            right: 1vw;
+
+        }
+
+        .nav-list {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .nav-list li {
+            list-style: none;
+            display: inline-block;
+            margin: 2vh 1vw;
+            font-size: 4vh;
+            text-align: center;
+
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            padding: 0vh 2vw;
+            color: aliceblue;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .nav-list li a:hover {
+            text-decoration: underline;
+            color: rgb(228, 159, 56);
+        }
+
 
         .head-wrap {
             border: 0vh solid #370505;
@@ -50,8 +97,8 @@
 
         * {
             border: 0;
-            margin: 0;
-            padding: 0;
+            margin: -3px;
+            padding: 2px;
             box-sizing: border-box;
         }
 
@@ -94,6 +141,26 @@
                 grid-template-columns: repeat(4, 1fr);
             }
         }
+
+        @media screen and (max-width : 991px) {
+            .nav-toggle {
+                display: block;
+                float: right;
+                margin-right: 50px;
+                padding-top: -10px;
+                /* padding-bottom: 20px; */
+                margin-top: -19px;
+
+                color: azure;
+                font-size: 2em;
+                text-decoration: none;
+            }
+
+            .right {
+                display: none;
+            }
+        }
+
 
         .card {
             list-style: none;
@@ -159,11 +226,32 @@
 <body>
     <header>
         <div class="head-wrap">
-    </header>
-    <div class="left">
-        <img src="images/logo.png" alt="">
 
-    </div>
+            <a href="#" class="nav-toggle">
+                &#9776;</i>
+            </a>
+
+            <div class="left">
+                <img src="images/logo.png" alt="">
+            </div>
+
+
+            <div class="right">
+                <nav class="navbar">
+
+                    <!-- <div class="toggle" id="toggle-btn">&#9776;</div> -->
+                    <ul class="nav-list" id="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="residential.html">Residential</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+            </div>
+
+        </div>
+    </header>
+
     <section class="hero-section">
         <div class="card-grid">
             <a class="card" href="#">
